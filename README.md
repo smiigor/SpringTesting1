@@ -61,4 +61,5 @@ Example added in class SimpleBeanWithInterface
 Video 65.19
 Spring Framework Java - Аспектно-ориентированное программирование (AOP)
 
-This line added to test GitHub commit. Made on PC T590.
+This line added to test GitHub commit.   Made on PC T590.
+This line 2 was added on PC2.
