@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="org.example.lesson65_15"/>
+
+    <!-- Map -->
+    <util:map id="myMap" map-class="java.util.HashMap">
+        <entry key="Key_1">
+            <value>mapVal_1</value>
+        </entry>
+        <entry key="Key_2">
+            <value>mapVal_2</value>
+        </entry>
+    </util:map>
+
+    <!-- Properties -->
+    <util:properties id="myProps">
+        <prop key="firstProp"></prop>
+        <prop key="secondProp"></prop>
+    </util:properties>
+
+    <!-- Set -->
+    <util:set id="mySet">
+        <value>setVal1</value>
+        <value>setVal_2</value>
+    </util:set>
+
+    <!-- List -->
+    <util:list id="myList">
+        <value>listVal1</value>
+        <value>listVal_2</value>
+    </util:list>
+
+</beans>

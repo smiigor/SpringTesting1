@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="collectionsTest"
+          class="org.example.lesson65.CollectionsTestXml">
+        <property name="myMap">
+            <map>
+                <entry key="Value_1">
+                    <value>mapVal_1</value>
+                </entry>
+                <entry key="Value_2">
+                    <value>mapVal_2</value>
+                </entry>
+            </map>
+        </property>
+        <property name="myProps">
+            <props>
+                <prop key="firstProp">prop_1</prop>
+                <prop key="secondProp">prop_2</prop>
+            </props>
+        </property>
+        <property name="mySet">
+            <set>
+                <value>setVal1</value>
+                <value>setVal2</value>
+            </set>
+        </property>
+        <property name="myList">
+            <list>
+                <value>ListItem1</value>
+                <value>ListItem2</value>
+            </list>
+        </property>
+    </bean>
+</beans>
